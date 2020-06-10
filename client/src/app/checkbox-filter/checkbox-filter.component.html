@@ -1,0 +1,11 @@
+<mat-expansion-panel #panel>
+  <mat-expansion-panel-header>
+    {{groupName}}
+  </mat-expansion-panel-header>
+  <div class="checkbox" *ngFor="let item of items">
+    <mat-checkbox [(ngModel)]="item.checked" (change)="onToggle()">
+      {{item.label}}
+    </mat-checkbox>
+  </div>
+  <button mat-stroked-button color="primary" [disabled]="!hasChecked()" (click)="clearSelection()">Clear</button>
+</mat-expansion-panel>

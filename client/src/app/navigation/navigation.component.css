@@ -1,0 +1,39 @@
+.layout-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  flex: 1 auto;
+}
+
+.sidenav-container {
+  flex: 1 1 auto;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 24px;
+}
+
+.mat-toolbar.mat-primary {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mat-toolbar.mat-primary div {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
